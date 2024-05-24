@@ -1,0 +1,35 @@
+{
+    "short_name": "Orbita",
+    "name": "Orbita lite",
+    "start_url": "/orbita/index.html",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#000000",
+    "background_color":"#ffffff",
+    "description": "Página sobre o Orbita System.",
+    "icons": [
+        {
+            "src": "images/icon-144x144.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any"
+        },
+
+        {
+            "src": "images/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+
+        {
+            "src": "images/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose" : "any"
+        }
+
+    ]
+
+
+}

@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,html{
+    height: 100%;
+    background-image: url("./images/ceu-estrelado\ menor.jpg");
+    animation: animateSky 50s linear infinite;
+    animation-direction: alternate;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url("./images/ceu-estrelado\ menor.jpg");
+    animation: animateSky 50s linear infinite;
+    animation-direction: alternate;
+    flex-direction: column;
+}
+
+.foreground{
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#centro{
+    margin: 25px;
+    margin-top: -45px;
+    display: none;
+    color: white;
+    flex-wrap: wrap;
+    justify-content:center;
+   
+}
+
+#info{
+    margin: 25px;
+    margin-top: -45px;
+    display: none;
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+  
+}
+
+#nome_planeta{
+    margin-top: -25px;
+}
+
+#icon_planeta{
+    margin-top: 50px;
+    transition: 0.5s;
+    width: 150px;
+}
+
+
+#icon_planeta:hover{
+   transform: scale(1.4);
+   transition: 0.5s;
+}
+
+#desc_planeta{
+    margin-top: 50px;
+    text-wrap: wrap;
+}
+
+#voltar_planeta{
+    font-size: 14pt;
+    background-color: rgba(0, 0, 0, 0.33);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 10rem;
+    height: 3rem;
+}
+
+#button_iniciar{
+    font-size: 14pt;
+    background-color: rgba(0, 0, 0, 0.33);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 10rem;
+    height: 3rem;
+}
+
+#button_iniciar, #voltar_planeta:hover{
+    background-color: white;
+    color: black;
+}
+
+.card{
+    width: 220px;
+    height: 260px;
+    border: 1px solid white;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.295);
+    transform:scale(0.9);
+}
+
+.card:hover{
+    transform:scale(1);
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+.titulo_planeta{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.foto_planeta{
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 40px;
+    
+}
+
+
+#button_gerar{
+    font-size: 14pt;
+    background-color: rgba(0, 0, 0, 0.33);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 10rem;
+    height: 3rem;
+}
+
+#button_gerar:hover{
+    background-color: white;
+    color: black;
+}
+
+
+#button_enviar{
+    font-size: 14pt;
+    background-color: rgba(0, 0, 0, 0.33);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 10rem;
+    height: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+
+#button_enviar:hover{
+    background-color: white;
+    color: black;
+}
+
+#input_nome{
+    background-color:  rgba(0, 0, 0, 0.33);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 14rem;
+    height: 2.5rem;
+    text-align: center;
+    
+}
+
+#input_nome:focus{
+    outline: none;
+}
+
+#input_button{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:  rgba(0, 0, 0, 0.33);
+    display: none;
+    margin-left: 55px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#usuario{
+    display: flex;
+    font-size: 25pt;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+@keyframes animateSky {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
